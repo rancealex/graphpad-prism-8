@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order>
+	<group name="Error bars in column tables">
+		<item href="Entering replicate data.xml">Entering replicate data</item>
+		<item href="Entering averaged data.xml">Entering mean (or median) and error values</item>
+	</group>
+	<group name="T tests">
+		<item href="t test - Unpaired.xml">t test - Unpaired</item>
+		<item href="t test - Paired.xml">t test - Paired</item>
+		<item href="t test - One sample.xml">t test - One sample</item>
+	</group>
+	<group name="One-way ANOVA">
+		<item href="One-way ANOVA -  Ordinary.xml">Ordinary one-way ANOVA</item>
+		<item href="One-way ANOVA - Repeated measures.xml">Repeated measures one-way ANOVA</item>
+	</group>
+	<group name="Special uses of column tables">
+		<item href="Analyze a stack of P values.xml">Analyze a stack of P values</item>
+		<item href="ROC curve.xml">ROC curve</item>
+		<item href="Bland-Altman method comparison.xml">Bland-Altman method comparison</item>
+		<item href="Metanalysis (Forest) plot.xml">Metanalysis (Forest) plot</item>
+		<item href="Descriptive statistics.xml">Descriptive statistics</item>
+		<item href="Frequency distribution data and histogram.xml">Frequency distribution</item>
+	</group>
+</order>

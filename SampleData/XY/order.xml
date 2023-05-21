@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order>
+	<group name="Error bars in XY tables">
+		<item href="Entering replicate data.xml">Entering replicate data</item>
+		<item href="Entering mean with error values.xml">Entering mean (or median) and error values</item>
+	</group>
+	<group name="Correlation &#38; regression (linear and nonlinear)">
+		<item href="Correlation.xml">Correlation</item>
+		<item href="Simple linear regression.xml">Simple linear regression</item>
+		<item href="Linear regression - Compare slopes.xml">Linear regression - Compare slopes</item>
+		<item href="Interpolate unknowns from a linear standard curve.xml">Interpolate unknowns from a linear standard curve</item>
+		<item href="Nonlinear regression -- One phase exponential decay.xml">Nonlinear regression - One phase exponential decay</item>
+		<item href="Eliminating outliers during nonlinear regression.xml">Eliminating outliers during nonlinear regression</item>
+		<item href="RIA or ELISA - Interpolate unknowns from sigmoidal curve.xml">RIA or ELISA - Interpolate unknowns from sigmoidal curve</item>
+	</group>
+	<group name="Pharmacology">
+		<item href="Dose-response - X is log(dose).xml">Dose-response - X is log(dose)</item>
+		<item href="Dose-response - X is dose.xml">Dose-response - X is dose</item>
+		<item href="Dose-Response - Ambiguous until constrained.xml">Dose-Response - Ambiguous until constrained</item>
+		<item href="Dose-response - EC50 shift by global fitting.xml">Dose-response - EC50 shift by global fitting</item>
+		<item href="Binding - Saturation binding to total and nonspecific.xml">Binding - Saturation binding to total and nonspecific</item>
+		<item href="Binding - Saturation binding, specific binding only.xml">Binding - Saturation binding, specific binding only</item>
+		<item href="Binding - Compare two models -- One vs two site competition.xml">Binding - Compare two models - One vs two site competition</item>
+		<item href="Schild competitive antagonist - Global nonlinear regression.xml">Schild competitive antagonist - Global nonlinear regression</item>
+		<item href="Operational model of agonist action - Global nonlinear regression.xml">Operational model of agonist action - Global nonlinear regression</item>
+	</group>
+	<group name="Enzyme kinetics">
+		<item href="Enzyme kinetics - Michaelis-Menten.xml">Enzyme kinetics - Michaelis-Menten</item>
+		<item href="Enzyme kinetics - Competitive inhibition.xml">Enzyme kinetics - Competitive inhibition</item>
+	</group>
+	<group name="Special uses of XY tables">
+		<item href="Entering dates into the X column.xml">Entering dates into the X column</item>
+		<item href="Entering elapsed times into the X column.xml">Entering elapsed times into the X column</item>
+		<item href="Making an XY bar graph.xml">Making an XY bar graph</item>
+		<item href="XY Frequency distribution.xml">XY Frequency distribution</item>
+	</group>
+</order>
+
+
+
+
+

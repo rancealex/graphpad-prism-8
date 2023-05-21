@@ -1,0 +1,17 @@
+Standard curves to interpolate
+Dose-response - Stimulation
+Dose-response - Inhibition
+Dose-response - Special
+Binding - Saturation
+Binding - Competitive
+Binding - Kinetics
+Enzyme kinetics - Inhibition
+Enzyme kinetics - Velocity as a function of substrate
+Exponential
+Lines
+Polynomial
+Gaussian
+Sine waves
+Growth curves
+Linear quadratic curves
+Classic equations from prior versions of Prism

@@ -1,0 +1,35 @@
+/* Repeatedly import data, analyze it, and record the results
+
+Before running this script, you must have open a Prism
+project with the following:
+   --The first sheet in the data section is formatted 
+     appropriately for the data you are going to import.
+   --The first sheet in the results section is an
+     analysis (any kind) of the first data table. 
+  
+
+The sample script below contains some information in
+brackets [like this]. You need to replace these
+placeholders (including the brackets) before running
+the script.
+
+*/
+
+
+SetPath ["Path name in quotes"]
+
+OpenOutput Results.txt 
+Table Text
+
+ForEach *.txt
+  GoTo D 1
+  ClearTable
+  Import
+  WTable "File Name", %F
+  GoTo R 1  
+  Wtable ["Parameter Name"], [Row], 1
+  Wtable ["Parameter Name"], [Row], 1
+  //add more commands if you want to output more than two parameters
+  //the '1' at the end means it is saving results from column A.
+  //Change to '2' to save results in column B.
+Next

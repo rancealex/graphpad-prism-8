@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order>
+	<group name="Error bars in grouped tables">
+		<item href="Grouped bar graph - Entering replicate data.xml">Entering replicate data</item>
+		<item href="Grouped bar graph - Entering preaveraged data.xml">Entering mean (or median) and error values</item>
+	</group>
+	<group name="Two-way ANOVA">
+		<item href="Two-way ANOVA - Ordinary - two data sets.xml">Ordinary - two data sets</item>
+		<item href="Two-way ANOVA - Ordinary - three data sets.xml">Ordinary - three data sets</item>
+		<item href="RM two-way ANOVA - matched values stacked.xml">Repeated measures - matched values stacked</item>
+		<item href="RM two-way ANOVA - matched values in same row.xml">Repeated measures - matched values in same row</item>
+	</group>
+	<group name="Three-way ANOVA">
+		<item href="Three-way ANOVA 2 x 2 x 2.xml">Three-way ANOVA 2 x 2 x 2</item>
+		<item href="Three-way ANOVA 2 x 2 x K.xml">Three-way ANOVA 2 x 2 x K</item>
+	</group>
+	<group name="Special uses of grouped tables">
+		<item href="Multiple t tests.xml">Multiple t tests</item>
+		<item href="Heat map.xml">Heat map</item>
+	</group>
+</order>
+

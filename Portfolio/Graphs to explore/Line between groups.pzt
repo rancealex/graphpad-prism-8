@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GraphPadPrismFile xmlns="http://graphpad.com/prism/Prism.htm" PrismXMLVersion="5.00">
+<Created>
+<OriginalVersion CreatedByProgram="GraphPad Prism" CreatedByVersion="6.0.0.206" Login="Geoff" DateTime="2011-09-19T15:41:15-08:00"/>
+</Created>
+<InfoSequence>
+</InfoSequence>
+<TableSequence>
+
+<Ref ID="Table0" Selected="1"/>
+</TableSequence>
+<Table ID="Table0" XFormat="none" TableType="OneWay" EVFormat="AsteriskAfterNumber">
+<Title>Sample column data</Title>
+<FloatingNote ID="Sticky3" Color="Yellow" Left="401" Top="241" Width="374" Height="201">
+<WebLink Flags="0" ToolTip="@help:bar_graphs" URL="@help:bar_graphs">
+Learn about arranging data for different kinds of bar graphs
+</WebLink>
+
+<B><Font Size="10" Face="Arial">
+How column data are arranged
+</Font></B>
+<Font Size="10" Face="Arial">
+<BR/>The columns define four treatments. Note that, unlike many statistics programs, Prism does not define groups by using a grouping variable. Instead, the groups are defined by the columns. Note that one value is missing. Prism handles missing values without any problem. Some tests (repeated measures ANOVA, paired t test) can't handle missing values, and Prism will inform you of this.
+</Font>
+</FloatingNote>
+
+<YColumn Width="125" Decimals="0" Subcolumns="1">
+<Title>Control</Title>
+<Subcolumn>
+<d>23</d>
+<d>29</d>
+<d>45</d>
+<d>19</d>
+<d>25</d>
+<d>30</d>
+</Subcolumn>
+</YColumn>
+<YColumn Width="125" Decimals="0" Subcolumns="1">
+<Title>Drug A</Title>
+<Subcolumn>
+<d>31</d>
+<d>18</d>
+<d>31</d>
+<d>24</d>
+<d>34</d>
+<d>44</d>
+</Subcolumn>
+</YColumn>
+<YColumn Width="125" Decimals="0" Subcolumns="1">
+<Title>Drug B</Title>
+<Subcolumn>
+<d>98</d>
+<d>90</d>
+<d>67</d>
+<d>121</d>
+<d/>
+<d>79</d>
+</Subcolumn>
+</YColumn>
+<YColumn Width="125" Decimals="0" Subcolumns="1">
+<Title>Drug A + B</Title>
+<Subcolumn>
+<d>145</d>
+<d>156</d>
+<d>134</d>
+<d>167</d>
+<d>150</d>
+<d>155</d>
+</Subcolumn>
+</YColumn>
+</Table>
+
+<!--Analyses, graphs and layouts as compressed binary. Don't edit this part of the file.-->
+
+<Template xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">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</Template></GraphPadPrismFile>

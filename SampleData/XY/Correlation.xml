@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="#"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns:ps="http://graphpad.com/prism/Prism.htm" version="1.0">
+	<!--
+	XML style sheet template for formatting data and info tables from GraphPad Prism 6.0.
+	Copyright 1992-2012 GraphPad Software, Inc.
+-->
+	<xsl:output method="html" version="4.0" omit-xml-declaration="yes"/>
+	<GraphPadPrismFile xmlns="http://graphpad.com/prism/Prism.htm" PrismXMLVersion="5.00">
+<Created>
+<OriginalVersion CreatedByProgram="GraphPad Prism" CreatedByVersion="7.0.0.1" DateTime="2013-10-02T12:26:35+02:00"/>
+<MostRecentVersion CreatedByProgram="GraphPad Prism" CreatedByVersion="7.0.0.1" DateTime="2013-10-02T17:08:30+02:00"/>
+</Created>
+<DefGraphButton ButtonID="101"/>
+<InfoSequence>
+</InfoSequence>
+<TableSequence Selected="1">
+
+<Ref ID="Table0" Selected="1"/>
+</TableSequence>
+<Table ID="Table0" XFormat="numbers" YFormat="replicates" Replicates="1" TableType="XY" EVFormat="AsteriskAfterNumber">
+<Title>Ozone correlations</Title>
+<FloatingNote ID="Sticky0" Color="Yellow" Left="523" Top="308" Width="514" Height="250">
+<WebLink Flags="0" ToolTip="@help:STAT_Key_concepts_Correlation" URL="@help:STAT_Key_concepts_Correlation">
+Learn more about correlation
+</WebLink>
+
+<B><Font Size="11" Face="Verdana">
+How the data are organized
+</Font></B>
+<Font Size="11" Face="Verdana">
+<BR/>Each row represents a different day. The X column is for ozone level. The Y columns are for solar radiation, wind and temperature. 
+</Font>
+<B><Font Size="11" Face="Verdana">
+<BR/><BR/>The goal
+</Font></B>
+<Font Size="11" Face="Verdana">
+<BR/>To learn how the three weather variables are correlated with ozone level.
+</Font>
+<B><Font Size="11" Face="Verdana">
+<BR/><BR/>How to analyze the data to find a correlation matrix
+</Font></B>
+<Font Size="11" Face="Verdana">
+<BR/>Click Analyze, and choose Correlation from the list of XY analyses.  Accept all the default choices.
+</Font>
+</FloatingNote>
+
+<FloatingNote ID="Sticky1" Color="Blue" Left="716" Top="161" Width="320" Height="71">
+<WebLink Flags="0" ToolTip="@help:STAT_The_difference_between_correla" URL="@help:STAT_The_difference_between_correla">
+Correlation vs. regression
+</WebLink>
+
+<Font Size="11" Face="Verdana">
+Why doesn't correlation plot a line?
+</Font>
+</FloatingNote>
+
+<FloatingNote ID="Sticky2" Color="Blue" Left="716" Top="234" Width="320" Height="71">
+<WebLink Flags="0" ToolTip="http://faculty.washington.edu/~heagerty/Books/Biostatistics/index-data.html" URL="http://faculty.washington.edu/~heagerty/Books/Biostatistics/index-data.html">
+Data source
+</WebLink>
+
+<Font Size="11" Face="Verdana">
+Where do these data come from?
+</Font>
+</FloatingNote>
+
+<RowTitlesColumn Width="1">
+<Subcolumn/>
+</RowTitlesColumn>
+<XColumn Width="81" Decimals="0" Subcolumns="1">
+<Title>Ozone</Title>
+<Subcolumn>
+<d>41</d>
+<d>36</d>
+<d>12</d>
+<d>18</d>
+<d/>
+<d>28</d>
+<d>23</d>
+<d>19</d>
+<d>8</d>
+<d/>
+<d>7</d>
+<d>16</d>
+<d>11</d>
+<d>14</d>
+<d>18</d>
+<d>14</d>
+<d>34</d>
+<d>6</d>
+<d>30</d>
+<d>11</d>
+<d>1</d>
+<d>11</d>
+<d>4</d>
+<d>32</d>
+<d/>
+<d/>
+<d/>
+<d>23</d>
+<d>45</d>
+<d>115</d>
+<d>37</d>
+<d/>
+<d/>
+<d/>
+<d/>
+<d/>
+<d/>
+<d>29</d>
+<d/>
+<d>71</d>
+<d>39</d>
+<d/>
+<d/>
+<d>23</d>
+<d/>
+<d/>
+<d>21</d>
+<d>37</d>
+<d>20</d>
+<d>12</d>
+<d>13</d>
+<d/>
+<d/>
+<d/>
+<d/>
+<d/>
+<d/>
+<d/>
+<d/>
+<d/>
+<d/>
+<d>135</d>
+<d>49</d>
+<d>32</d>
+<d/>
+<d>64</d>
+<d>40</d>
+<d>77</d>
+<d>97</d>
+<d>97</d>
+<d>85</d>
+<d/>
+<d>10</d>
+<d>27</d>
+<d/>
+<d>7</d>
+<d>48</d>
+<d>35</d>
+<d>61</d>
+<d>79</d>
+<d>63</d>
+<d>16</d>
+<d/>
+<d/>
+<d>80</d>
+<d>108</d>
+<d>20</d>
+<d>52</d>
+<d>82</d>
+<d>50</d>
+<d>64</d>
+<d>59</d>
+<d>39</d>
+<d>9</d>
+<d>16</d>
+<d>78</d>
+<d>35</d>
+<d>66</d>
+<d>122</d>
+<d>89</d>
+<d>110</d>
+<d/>
+<d/>
+<d>44</d>
+<d>28</d>
+<d>65</d>
+<d/>
+<d>22</d>
+<d>59</d>
+<d>23</d>
+<d>31</d>
+<d>44</d>
+<d>21</d>
+<d>9</d>
+<d/>
+<d>45</d>
+<d>168</d>
+<d>73</d>
+<d/>
+<d>76</d>
+<d>118</d>
+<d>84</d>
+<d>85</d>
+<d>96</d>
+<d>78</d>
+<d>73</d>
+<d>91</d>
+<d>47</d>
+<d>32</d>
+<d>20</d>
+<d>23</d>
+<d>21</d>
+<d>24</d>
+<d>44</d>
+<d>21</d>
+<d>28</d>
+<d>9</d>
+<d>13</d>
+<d>46</d>
+<d>18</d>
+<d>13</d>
+<d>24</d>
+<d>16</d>
+<d>13</d>
+<d>23</d>
+<d>36</d>
+<d>7</d>
+<d>14</d>
+<d>30</d>
+<d/>
+<d>14</d>
+<d>18</d>
+<d>20</d>
+</Subcolumn>
+</XColumn>
+<YColumn Width="81" Decimals="0" Subcolumns="1">
+<Title>Solar.R</Title>
+<Subcolumn>
+<d>190</d>
+<d>118</d>
+<d>149</d>
+<d>313</d>
+<d/>
+<d/>
+<d>299</d>
+<d>99</d>
+<d>19</d>
+<d>194</d>
+<d/>
+<d>256</d>
+<d>290</d>
+<d>274</d>
+<d>65</d>
+<d>334</d>
+<d>307</d>
+<d>78</d>
+<d>322</d>
+<d>44</d>
+<d>8</d>
+<d>320</d>
+<d>25</d>
+<d>92</d>
+<d>66</d>
+<d>266</d>
+<d/>
+<d>13</d>
+<d>252</d>
+<d>223</d>
+<d>279</d>
+<d>286</d>
+<d>287</d>
+<d>242</d>
+<d>186</d>
+<d>220</d>
+<d>264</d>
+<d>127</d>
+<d>273</d>
+<d>291</d>
+<d>323</d>
+<d>259</d>
+<d>250</d>
+<d>148</d>
+<d>332</d>
+<d>322</d>
+<d>191</d>
+<d>284</d>
+<d>37</d>
+<d>120</d>
+<d>137</d>
+<d>150</d>
+<d>59</d>
+<d>91</d>
+<d>250</d>
+<d>135</d>
+<d>127</d>
+<d>47</d>
+<d>98</d>
+<d>31</d>
+<d>138</d>
+<d>269</d>
+<d>248</d>
+<d>236</d>
+<d>101</d>
+<d>175</d>
+<d>314</d>
+<d>276</d>
+<d>267</d>
+<d>272</d>
+<d>175</d>
+<d>139</d>
+<d>264</d>
+<d>175</d>
+<d>291</d>
+<d>48</d>
+<d>260</d>
+<d>274</d>
+<d>285</d>
+<d>187</d>
+<d>220</d>
+<d>7</d>
+<d>258</d>
+<d>295</d>
+<d>294</d>
+<d>223</d>
+<d>81</d>
+<d>82</d>
+<d>213</d>
+<d>275</d>
+<d>253</d>
+<d>254</d>
+<d>83</d>
+<d>24</d>
+<d>77</d>
+<d/>
+<d/>
+<d/>
+<d>255</d>
+<d>229</d>
+<d>207</d>
+<d>222</d>
+<d>137</d>
+<d>192</d>
+<d>273</d>
+<d>157</d>
+<d>64</d>
+<d>71</d>
+<d>51</d>
+<d>115</d>
+<d>244</d>
+<d>190</d>
+<d>259</d>
+<d>36</d>
+<d>255</d>
+<d>212</d>
+<d>238</d>
+<d>215</d>
+<d>153</d>
+<d>203</d>
+<d>225</d>
+<d>237</d>
+<d>188</d>
+<d>167</d>
+<d>197</d>
+<d>183</d>
+<d>189</d>
+<d>95</d>
+<d>92</d>
+<d>252</d>
+<d>220</d>
+<d>230</d>
+<d>259</d>
+<d>236</d>
+<d>259</d>
+<d>238</d>
+<d>24</d>
+<d>112</d>
+<d>237</d>
+<d>224</d>
+<d>27</d>
+<d>238</d>
+<d>201</d>
+<d>238</d>
+<d>14</d>
+<d>139</d>
+<d>49</d>
+<d>20</d>
+<d>193</d>
+<d>145</d>
+<d>191</d>
+<d>131</d>
+<d>223</d>
+</Subcolumn>
+</YColumn>
+<YColumn Width="81" Decimals="1" Subcolumns="1">
+<Title>Wind</Title>
+<Subcolumn>
+<d>7,4</d>
+<d>8</d>
+<d>12,6</d>
+<d>11,5</d>
+<d>14,3</d>
+<d>14,9</d>
+<d>8,6</d>
+<d>13,8</d>
+<d>20,1</d>
+<d>8,6</d>
+<d>6,9</d>
+<d>9,7</d>
+<d>9,2</d>
+<d>10,9</d>
+<d>13,2</d>
+<d>11,5</d>
+<d>12</d>
+<d>18,4</d>
+<d>11,5</d>
+<d>9,7</d>
+<d>9,7</d>
+<d>16,6</d>
+<d>9,7</d>
+<d>12</d>
+<d>16,6</d>
+<d>14,9</d>
+<d>8</d>
+<d>12</d>
+<d>14,9</d>
+<d>5,7</d>
+<d>7,4</d>
+<d>8,6</d>
+<d>9,7</d>
+<d>16,1</d>
+<d>9,2</d>
+<d>8,6</d>
+<d>14,3</d>
+<d>9,7</d>
+<d>6,9</d>
+<d>13,8</d>
+<d>11,5</d>
+<d>10,9</d>
+<d>9,2</d>
+<d>8</d>
+<d>13,8</d>
+<d>11,5</d>
+<d>14,9</d>
+<d>20,7</d>
+<d>9,2</d>
+<d>11,5</d>
+<d>10,3</d>
+<d>6,3</d>
+<d>1,7</d>
+<d>4,6</d>
+<d>6,3</d>
+<d>8</d>
+<d>8</d>
+<d>10,3</d>
+<d>11,5</d>
+<d>14,9</d>
+<d>8</d>
+<d>4,1</d>
+<d>9,2</d>
+<d>9,2</d>
+<d>10,9</d>
+<d>4,6</d>
+<d>10,9</d>
+<d>5,1</d>
+<d>6,3</d>
+<d>5,7</d>
+<d>7,4</d>
+<d>8,6</d>
+<d>14,3</d>
+<d>14,9</d>
+<d>14,9</d>
+<d>14,3</d>
+<d>6,9</d>
+<d>10,3</d>
+<d>6,3</d>
+<d>5,1</d>
+<d>11,5</d>
+<d>6,9</d>
+<d>9,7</d>
+<d>11,5</d>
+<d>8,6</d>
+<d>8</d>
+<d>8,6</d>
+<d>12</d>
+<d>7,4</d>
+<d>7,4</d>
+<d>7,4</d>
+<d>9,2</d>
+<d>6,9</d>
+<d>13,8</d>
+<d>7,4</d>
+<d>6,9</d>
+<d>7,4</d>
+<d>4,6</d>
+<d>4</d>
+<d>10,3</d>
+<d>8</d>
+<d>8,6</d>
+<d>11,5</d>
+<d>11,5</d>
+<d>11,5</d>
+<d>9,7</d>
+<d>11,5</d>
+<d>10,3</d>
+<d>6,3</d>
+<d>7,4</d>
+<d>10,9</d>
+<d>10,3</d>
+<d>15,5</d>
+<d>14,3</d>
+<d>12,6</d>
+<d>9,7</d>
+<d>3,4</d>
+<d>8</d>
+<d>5,7</d>
+<d>9,7</d>
+<d>2,3</d>
+<d>6,3</d>
+<d>6,3</d>
+<d>6,9</d>
+<d>5,1</d>
+<d>2,8</d>
+<d>4,6</d>
+<d>7,4</d>
+<d>15,5</d>
+<d>10,9</d>
+<d>10,3</d>
+<d>10,9</d>
+<d>9,7</d>
+<d>14,9</d>
+<d>15,5</d>
+<d>6,3</d>
+<d>10,9</d>
+<d>11,5</d>
+<d>6,9</d>
+<d>13,8</d>
+<d>10,3</d>
+<d>10,3</d>
+<d>8</d>
+<d>12,6</d>
+<d>9,2</d>
+<d>10,3</d>
+<d>10,3</d>
+<d>16,6</d>
+<d>6,9</d>
+<d>13,2</d>
+<d>14,3</d>
+<d>8</d>
+<d>11,5</d>
+</Subcolumn>
+</YColumn>
+<YColumn Width="81" Decimals="0" Subcolumns="1">
+<Title>Temp</Title>
+<Subcolumn>
+<d>67</d>
+<d>72</d>
+<d>74</d>
+<d>62</d>
+<d>56</d>
+<d>66</d>
+<d>65</d>
+<d>59</d>
+<d>61</d>
+<d>69</d>
+<d>74</d>
+<d>69</d>
+<d>66</d>
+<d>68</d>
+<d>58</d>
+<d>64</d>
+<d>66</d>
+<d>57</d>
+<d>68</d>
+<d>62</d>
+<d>59</d>
+<d>73</d>
+<d>61</d>
+<d>61</d>
+<d>57</d>
+<d>58</d>
+<d>57</d>
+<d>67</d>
+<d>81</d>
+<d>79</d>
+<d>76</d>
+<d>78</d>
+<d>74</d>
+<d>67</d>
+<d>84</d>
+<d>85</d>
+<d>79</d>
+<d>82</d>
+<d>87</d>
+<d>90</d>
+<d>87</d>
+<d>93</d>
+<d>92</d>
+<d>82</d>
+<d>80</d>
+<d>79</d>
+<d>77</d>
+<d>72</d>
+<d>65</d>
+<d>73</d>
+<d>76</d>
+<d>77</d>
+<d>76</d>
+<d>76</d>
+<d>76</d>
+<d>75</d>
+<d>78</d>
+<d>73</d>
+<d>80</d>
+<d>77</d>
+<d>83</d>
+<d>84</d>
+<d>85</d>
+<d>81</d>
+<d>84</d>
+<d>83</d>
+<d>83</d>
+<d>88</d>
+<d>92</d>
+<d>92</d>
+<d>89</d>
+<d>82</d>
+<d>73</d>
+<d>81</d>
+<d>91</d>
+<d>80</d>
+<d>81</d>
+<d>82</d>
+<d>84</d>
+<d>87</d>
+<d>85</d>
+<d>74</d>
+<d>81</d>
+<d>82</d>
+<d>86</d>
+<d>85</d>
+<d>82</d>
+<d>86</d>
+<d>88</d>
+<d>86</d>
+<d>83</d>
+<d>81</d>
+<d>81</d>
+<d>81</d>
+<d>82</d>
+<d>86</d>
+<d>85</d>
+<d>87</d>
+<d>89</d>
+<d>90</d>
+<d>90</d>
+<d>92</d>
+<d>86</d>
+<d>86</d>
+<d>82</d>
+<d>80</d>
+<d>79</d>
+<d>77</d>
+<d>79</d>
+<d>76</d>
+<d>78</d>
+<d>78</d>
+<d>77</d>
+<d>72</d>
+<d>75</d>
+<d>79</d>
+<d>81</d>
+<d>86</d>
+<d>88</d>
+<d>97</d>
+<d>94</d>
+<d>96</d>
+<d>94</d>
+<d>91</d>
+<d>92</d>
+<d>93</d>
+<d>93</d>
+<d>87</d>
+<d>84</d>
+<d>80</d>
+<d>78</d>
+<d>75</d>
+<d>73</d>
+<d>81</d>
+<d>76</d>
+<d>77</d>
+<d>71</d>
+<d>71</d>
+<d>78</d>
+<d>67</d>
+<d>76</d>
+<d>68</d>
+<d>82</d>
+<d>64</d>
+<d>71</d>
+<d>81</d>
+<d>69</d>
+<d>63</d>
+<d>70</d>
+<d>77</d>
+<d>75</d>
+<d>76</d>
+<d>68</d>
+</Subcolumn>
+</YColumn>
+</Table>
+</GraphPadPrismFile>
+	<xsl:template match="ps:Info">
+		<a><xsl:attribute name="name"><xsl:value-of select="@ID"/></xsl:attribute></a>
+		<table border="0">
+			<tr><td><xsl:apply-templates select="ps:Title"/> </td><td width="20"></td><td><b>Notes</b></td></tr>
+			<tr><td valign="top">
+					<table BORDER="1" CELLSPACING="0">
+						<tr><th>Constant</th><th>Name</th></tr>
+						<xsl:for-each select="ps:Constant">
+							<tr>
+								<td><xsl:apply-templates select="ps:Name"/> </td>
+								<td><xsl:apply-templates select="ps:Value"/> </td>
+							</tr>
+						</xsl:for-each>
+					</table>
+				</td>
+				<td width="20">
+				</td>
+				<td valign="top">
+					<xsl:apply-templates select="ps:Notes"/>
+				</td></tr>
+		</table>
+	</xsl:template>
+	<xsl:template match="ps:GraphPadPrismFile">
+		<HTML>
+			<BODY>
+				<xsl:variable name="Chars" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"/>
+				<font color="#999999">
+					<p align="center">This file can be opened by <a href="http://www.graphpad.com">GraphPad</a> Prism (version 
+	<xsl:value-of select="@PrismXMLVersion"/> or later). </p></font><hr/>
+         This file contains <xsl:value-of select="count(ps:Table|ps:HugeTable)"/> data tables and 
+	<xsl:value-of select="count(ps:Info)+count(ps:Table|ps:HugeTable/ps:Info)"/> info tables:
+
+	<dir>
+					<xsl:for-each select="ps:Info">
+						<li>
+							<a>
+								<xsl:attribute name="href">#<xsl:value-of select="@ID"/></xsl:attribute>
+								<xsl:apply-templates select="ps:Title"/>
+							</a>
+						</li>
+					</xsl:for-each>
+					<xsl:for-each select="ps:Table|ps:HugeTable">
+						<li>
+							<a>
+								<xsl:attribute name="href">#<xsl:value-of select="@ID"/></xsl:attribute>
+								<xsl:apply-templates select="ps:Title"/>
+							</a>
+							<dir>
+								<xsl:for-each select="ps:Info">
+									<li>
+										<a>
+											<xsl:attribute name="href">#<xsl:value-of select="@ID"/></xsl:attribute>
+											<xsl:apply-templates select="ps:Title"/>
+										</a>
+									</li>
+								</xsl:for-each>
+							</dir>
+						</li>
+					</xsl:for-each>
+				</dir>
+				<hr/>
+				<xsl:apply-templates select="ps:Info"/>
+				<br/>
+				<hr/>
+				<br/>
+				<xsl:for-each select="ps:Table|ps:HugeTable">
+					<xsl:apply-templates select="ps:Title"/>
+					<a><xsl:attribute name="name"><xsl:value-of select="@ID"/></xsl:attribute></a>
+					<xsl:variable name="width" select="100 div count (*/ps:Subcolumn)"/>
+					<xsl:variable name="xFormat" select="./@XFormat"/>
+					<xsl:variable name="yFormat" select="./@YFormat"/>
+					<xsl:variable name="nRepl" select="./@replicates"/>
+					<xsl:variable name="isXSubcol" select="boolean($xFormat='error' or count(ps:XColumn/ps:Subcolumn/ps:Title)&gt;0)"/>
+					<xsl:variable name="isYSubcol" select="boolean(($yFormat='replicates'and ./@Replicates&gt;1) or 
+						 ($yFormat!='text'and $yFormat!='replicates') or 
+						count(ps:YColumn/ps:Subcolumn/ps:Title)&gt;0)"/>
+					<TABLE BORDER="1" CELLSPACING="0">
+						<TR>
+							<xsl:for-each select="ps:RowTitlesColumn">
+								<TD align="center">
+									<xsl:attribute name="rowspan">
+										<xsl:if test="$isXSubcol or $isYSubcol">2</xsl:if>
+									</xsl:attribute><BR/>
+								</TD>
+							</xsl:for-each>
+							<xsl:for-each select="ps:XColumn">
+								<TD align="center">
+									<xsl:attribute name="rowspan">
+										<xsl:if test="$isYSubcol and not($isXSubcol)">2</xsl:if>
+									</xsl:attribute>
+									<xsl:attribute name="colspan"><xsl:value-of select="./@Subcolumns"/></xsl:attribute>
+					 
+					<xsl:apply-templates select="ps:Title"/>
+									<xsl:if test="count(ps:Title)=0 or ps:Title=''">X-Title</xsl:if>				
+					 
+				</TD>
+							</xsl:for-each>
+							<xsl:for-each select="ps:YColumn">
+								<xsl:variable name="DefColName2" select="(position()-1) mod 26"/>
+								<xsl:variable name="DefColName1" select="(position()-1-$DefColName2) div 26"/>
+								<TD align="center">
+									<xsl:attribute name="colspan"><xsl:value-of select="./@Subcolumns"/></xsl:attribute>
+									<xsl:attribute name="rowspan">
+										<xsl:if test="$isXSubcol and not($isYSubcol)">2</xsl:if>
+									</xsl:attribute>
+					 
+					<xsl:apply-templates select="ps:Title"/>
+									<xsl:if test="count(ps:Title)=0 or ps:Title=''">
+										<xsl:value-of select="'Data Set-'"/>
+										<xsl:if test="$DefColName1 &gt; 0">
+											<xsl:value-of select="substring($Chars,$DefColName1,1)"/>
+										</xsl:if>
+										<xsl:value-of select="substring($Chars,$DefColName2+1,1)"/>
+									</xsl:if>
+					 				
+	   			</TD>
+							</xsl:for-each>
+						</TR>
+						<xsl:if test="$isXSubcol or $isYSubcol">
+							<TR>
+								<xsl:if test="$isXSubcol">
+									<xsl:for-each select="ps:XColumn">
+										<xsl:for-each select="ps:Subcolumn">
+											<TD align="center"> 
+					 
+					<xsl:apply-templates select="ps:Title"/>
+												<xsl:if test="count(ps:Title)=0 or ps:Title=''">
+													<xsl:choose>
+														<xsl:when test="position()=1"><B>X</B></xsl:when>
+														<xsl:when test="position()=2"><B>Err.Bar</B></xsl:when>
+													</xsl:choose>
+												</xsl:if>				
+					 
+				</TD>
+										</xsl:for-each>
+									</xsl:for-each>
+								</xsl:if>
+								<xsl:if test="$isYSubcol">
+									<xsl:for-each select="ps:YColumn">
+										<xsl:variable name="DefColName2" select="(position()-1) mod 26"/>
+										<xsl:variable name="DefColName1" select="(position()-1-$DefColName2) div 26"/>
+										<xsl:for-each select="ps:Subcolumn">
+											<TD align="center">
+					 
+					<xsl:apply-templates select="ps:Title"/>
+												<xsl:if test="count(ps:Title)=0 or ps:Title=''">
+													<xsl:if test="$yFormat='replicates' or $yFormat='text'">
+														<B>
+															<xsl:if test="$DefColName1 &gt; 0">
+																<xsl:value-of select="substring($Chars,$DefColName1,1)"/>
+															</xsl:if>
+															<xsl:value-of select="substring($Chars,$DefColName2+1,1)"/>:Y<xsl:value-of select="position()"/>
+														</B>
+													</xsl:if>
+													<xsl:if test="$yFormat!='replicates' and $yFormat!='text'">
+														<xsl:if test="not($yFormat='replicates' or $yFormat='text')">
+															<xsl:if test="position()=1"><B>Mean</B></xsl:if>
+															<xsl:if test="position()!=1">
+																<xsl:choose>
+																	<xsl:when test="$yFormat='SD'">
+																		<B>SD</B>
+																	</xsl:when>
+																	<xsl:when test="$yFormat='SE'">
+																		<B>SEM</B>
+																	</xsl:when>
+																	<xsl:when test="$yFormat='CV'">
+																		<B>%CV</B>
+																	</xsl:when>
+																	<xsl:when test="$yFormat='SDN'">
+																		<xsl:if test="position()=2"><B>SD</B></xsl:if>
+																		<xsl:if test="position()=3"><B>N</B></xsl:if>
+																	</xsl:when>
+																	<xsl:when test="$yFormat='SEN'">
+																		<xsl:if test="position()=2"><B>SEM</B></xsl:if>
+																		<xsl:if test="position()=3"><B>N</B></xsl:if>
+																	</xsl:when>
+																	<xsl:when test="$yFormat='CVN'">
+																		<xsl:if test="position()=2"><B>%CV</B></xsl:if>
+																		<xsl:if test="position()=3"><B>N</B></xsl:if>
+																	</xsl:when>
+																	<xsl:when test="$yFormat='low-high'">
+																		<xsl:if test="position()=2"><B>+Error</B></xsl:if>
+																		<xsl:if test="position()=3"><B>-Error</B></xsl:if>
+																	</xsl:when>
+																	<xsl:when test="$yFormat='upper-lower-limits'">
+																		<xsl:if test="position()=2"><B>UpperLimit</B></xsl:if>
+																		<xsl:if test="position()=3"><B>LowerLimit</B></xsl:if>
+																	</xsl:when>
+																</xsl:choose>
+															</xsl:if>
+														</xsl:if>
+													</xsl:if>
+												</xsl:if>
+					 				
+	   			</TD>
+										</xsl:for-each>
+									</xsl:for-each>
+								</xsl:if>
+							</TR>
+						</xsl:if>
+						<TR>
+							<xsl:for-each select="ps:RowTitlesColumn/ps:Subcolumn">
+								<td valign="top" nowrap="1">
+									<xsl:attribute name="width"><xsl:value-of select="$width"/>%</xsl:attribute>
+									<xsl:apply-templates select="ps:d"/>
+									<xsl:if test="count(ps:d)=0"><br/></xsl:if>
+								</td>
+							</xsl:for-each>
+							<xsl:for-each select="ps:XColumn/ps:Subcolumn">
+								<td valign="top" nowrap="1">
+									<xsl:attribute name="width"><xsl:value-of select="$width"/>%</xsl:attribute>
+									<xsl:apply-templates select="ps:d"/>
+									<xsl:if test="count(ps:d)=0"><br/></xsl:if>
+								</td>
+							</xsl:for-each>
+							<xsl:for-each select="ps:YColumn/ps:Subcolumn">
+								<td valign="top" nowrap="1">
+									<xsl:attribute name="width"><xsl:value-of select="$width"/>%</xsl:attribute>
+									<xsl:apply-templates select="ps:d"/>
+									<xsl:if test="count(ps:d)=0"><br/></xsl:if>
+								</td>
+							</xsl:for-each>
+						</TR>
+					</TABLE>
+					<br/>
+					<xsl:apply-templates select="ps:Info"/>
+					<br/>
+					<hr/>
+					<br/>
+				</xsl:for-each>
+			</BODY>
+		</HTML>
+	</xsl:template>
+	<!--<xsl:template match="ps:d">
+	<xsl:choose>
+		<xsl:when test="@Excluded and string-length(text())" >
+		    <font color="#0000ee">
+	      		<xsl:apply-templates select="node()"/>*		
+		    </font>
+		</xsl:when>
+	    <xsl:otherwise>
+			<xsl:apply-templates select="node()"/>
+		</xsl:otherwise>
+	</xsl:choose>
+	<xsl:if test="position()!=last()"><br/></xsl:if>
+</xsl:template>-->
+	<xsl:template match="ps:d">
+		<xsl:choose>
+			<xsl:when test="@Excluded and string-length(text())">
+				<xsl:choose>
+					<xsl:when test="../../../@EVFormat='AsteriskAfterNumber'">
+						<font color="#0000ee">
+							<xsl:apply-templates select="node()"/>*
+						</font>
+					</xsl:when>
+					<xsl:when test="../../../@EVFormat='Blank'">
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:apply-templates select="node()"/>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:apply-templates select="node()"/>
+			</xsl:otherwise>
+		</xsl:choose>
+		<xsl:if test="position()!=last()"><br/></xsl:if>
+	</xsl:template>
+	<xsl:template match="ps:Title">
+		<b><xsl:apply-templates select="node()"/></b>
+	</xsl:template>
+	<xsl:template match="node()">
+		<xsl:copy>
+			<xsl:apply-templates select="node()"/>
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="ps:Font">
+		<font>
+			<xsl:if test="@Size">
+				<xsl:attribute name="STYLE">font-size:<xsl:value-of select="@Size"/>pt</xsl:attribute>
+			</xsl:if>
+			<xsl:copy-of select="@*"/>
+			<xsl:apply-templates select="node()"/>
+		</font>
+	</xsl:template>
+	<xsl:template match="/">
+		<HTML>
+			<BODY>
+				<xsl:apply-templates select="//ps:GraphPadPrismFile"/>
+			</BODY>
+		</HTML>
+	</xsl:template>
+</xsl:stylesheet>
