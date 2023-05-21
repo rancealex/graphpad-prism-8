@@ -1,0 +1,979 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 12">
+<meta name=Originator content="Microsoft Word 12">
+<link rel=File-List href="ScriptHelper_files/filelist.xml">
+<title>Syntax: </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Harvey Motulsky</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Alex</o:LastAuthor>
+  <o:Revision>15</o:Revision>
+  <o:TotalTime>158</o:TotalTime>
+  <o:Created>2005-06-21T13:22:00Z</o:Created>
+  <o:LastSaved>2015-11-27T11:29:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>453</o:Words>
+  <o:Characters>2585</o:Characters>
+  <o:Company>GraphPad Software</o:Company>
+  <o:Lines>21</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3032</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="ScriptHelper_files/themedata.thmx">
+<link rel=colorSchemeMapping href="ScriptHelper_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>120</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>JA</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;
+	mso-font-charset:204;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:42.5pt 42.5pt 42.5pt 70.85pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="9218"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=whitesmoke lang=EN-US style='tab-interval:.5in'>
+
+<div class=WordSection1>
+
+<div>
+
+<p class=MsoNormal><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+color:blue;mso-ansi-language:UK'>[</span><span style='font-size:9.5pt;
+font-family:"Georgia","serif";color:blue'>required argument</span><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";color:blue;
+mso-ansi-language:UK'>]</span><span lang=UK style='font-size:9.5pt;font-family:
+"Georgia","serif";mso-ansi-language:UK'> </span><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+color:green;mso-ansi-language:UK'>&lt;</span><span style='font-size:9.5pt;
+font-family:"Georgia","serif";color:green'>optional argument</span><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";color:green;
+mso-ansi-language:UK'>&gt;</span><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> </span><span lang=UK
+style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.5pt;font-family:"Georgia","serif"'>&nbsp;</span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>//</span></b><b style='mso-bidi-font-weight:normal'><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:
+UK'> comment</span></b><b style='mso-bidi-font-weight:normal'><span lang=UK
+style='mso-ansi-language:UK'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>/</span></b><b><span style='font-size:9.5pt;font-family:
+"Georgia","serif"'>* </span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'>multiple <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'><span
+style='mso-spacerun:yes'>       </span><span class=GramE>line</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'><span
+style='mso-spacerun:yes'>     </span>c</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>omment</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'>s <span style='mso-bidi-font-weight:
+bold'>*/</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:9.5pt;font-family:"Georgia","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>Simulations<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>ForEach</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[#
+of loops]</span></span><span lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Regenerate</span></b><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Next</span></b><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Beep</span></b><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.5pt;font-family:"Georgia","serif"'>In
+<span class=GramE>a <span lang=UK style='mso-ansi-language:UK'><span
+style='mso-spacerun:yes'> </span>loop</span></span></span><span lang=UK
+style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:UK'>,</span><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'> use</span><span
+style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:UK'> <span
+lang=UK style='color:red'>%N</span><span lang=UK> </span></span><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'>to output</span><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:
+UK'> the loop number.</span><span lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=UK style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>Loops<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>ForEach</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[filespec]</span></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>ForEach</span></b><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>Sheet</span></b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'> </span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Next</span></b><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Beep</span></b><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.5pt;font-family:"Georgia","serif"'>In
+<span class=GramE>any <span style='mso-ansi-language:UK'><span
+style='mso-spacerun:yes'> </span><span lang=UK>loop</span></span></span></span><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:
+UK'>, use</span><span lang=UK style='mso-ansi-language:UK'> </span><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";color:red;
+mso-ansi-language:UK'>%N </span><span style='font-size:9.5pt;font-family:"Georgia","serif"'>to
+output</span> <span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>the loop number.</span><span lang=UK style='mso-ansi-language:
+UK'> <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.5pt;font-family:"Georgia","serif"'>In
+a <span class=SpellE>ForEach</span> loop, use</span><span style='font-size:
+9.5pt;font-family:"Georgia","serif";mso-ansi-language:UK'> <span lang=UK
+style='color:red'>%F</span><span lang=UK> </span></span><span style='font-size:
+9.5pt;font-family:"Georgia","serif"'>to output</span><span lang=UK
+style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:UK'> the
+file name </span><span style='font-size:9.5pt;font-family:"Georgia","serif"'>and
+</span><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+color:red;mso-ansi-language:UK'>%X</span><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> </span><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'>to <span class=GramE>output
+<span lang=UK style='mso-ansi-language:UK'><span
+style='mso-spacerun:yes'> </span>the</span></span></span><span lang=UK
+style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:UK'>
+extension</span><span style='font-size:9.5pt;font-family:"Georgia","serif"'>.</span></p>
+
+<p class=MsoNormal><span style='font-size:9.5pt;font-family:"Georgia","serif"'>In
+any loop, use <span style='color:red'>%S</span> to output the name of currently
+active sheet. </span></p>
+
+<p class=MsoNormal><span style='font-size:9.5pt;font-family:"Georgia","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>Data
+tables<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>SetYReplicates</span></b><span lang=UK style='font-size:
+9.5pt;font-family:"Georgia","serif";mso-ansi-language:UK'> <span
+style='color:blue'>[#]</span></span><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Copy</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[#rows]</span>
+<span style='color:blue'>[#columns]</span> <span style='color:blue'>[first row]</span>
+<span style='color:blue'>[first col]</span> <span style='color:green'>&lt;first
+subcol&gt;</span></span><span lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Paste</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[first
+row]</span> <span style='color:blue'>[first col]</span> <span style='color:
+green'>&lt;first subcol&gt;</span></span><span style='font-size:9.5pt;
+font-family:"Georgia","serif";color:green'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>ClearTable</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:green'>&lt;row&gt;</span>,<span
+style='color:green'>&lt;col&gt;</span>,<span style='color:green'>&lt;subcol&gt;</span></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>D</span></b><span class=SpellE><b><span style='font-size:
+9.5pt;font-family:"Georgia","serif"'>eleteAll</span></b></span><b><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:
+UK'>Data</span></b><b><span style='font-size:9.5pt;font-family:"Georgia","serif"'>Sets</span></b><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'> </span><span lang=UK
+style='font-size:9.5pt;font-family:"Georgia","serif";color:green;mso-ansi-language:
+UK'>&lt;clear&gt;</span><span lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>DuplicateDataTable</span></b><span lang=UK
+style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:UK'> <span
+style='color:green'>&lt;clear&gt;</span></span><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>DuplicateFamily</span></b><span lang=UK style='font-size:
+9.5pt;font-family:"Georgia","serif";mso-ansi-language:UK'> <span
+style='color:green'>&lt;prepend_text&gt; &lt;clear&gt;</span></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Import</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";color:green;mso-ansi-language:UK'>
+&lt;filename&gt;</span><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>,<span style='color:green'> &lt;row&gt;</span>,<span
+style='color:green'> &lt;col&gt;</span></span><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>ImportLink</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";color:green;mso-ansi-language:UK'>
+&lt;filename&gt;</span><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>,<span style='color:green'> &lt;row&gt;</span>,<span
+style='color:green'> &lt;col&gt;</span>,<span style='color:green'>
+&lt;subcol&gt;</span></span><span lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>InsertDataLink</span></b><span lang=UK style='font-size:
+9.5pt;font-family:"Georgia","serif";mso-ansi-language:UK'> <span
+style='color:green'>&lt;row&gt;</span>,<span style='color:green'> &lt;col&gt;</span>,<span
+style='color:green'> &lt;subcol&gt;</span></span><span lang=UK
+style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>InsertData</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:green'>&lt;row&gt;</span>,<span
+style='color:green'> &lt;col&gt;</span>,<span style='color:green'>
+&lt;subcol&gt;</span></span><span lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.5pt;font-family:"Georgia","serif"'>Inserts
+data contained within the script, between &lt;data&gt; and &lt;/data&gt;.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>ExportTable</span></b><span lang=UK style='mso-ansi-language:
+UK'> </span><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+color:blue;mso-ansi-language:UK'>[filename]</span><span lang=UK
+style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:UK'> <span
+style='color:green'>&lt;ALL&gt;</span> </span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>Graphs<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>ApplyColorScheme</span></b></span><b><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'> </span></b><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";color:blue;
+mso-ansi-language:UK'>[</span><span style='font-size:9.5pt;font-family:"Georgia","serif";
+color:blue'>scheme name</span><span lang=UK style='font-size:9.5pt;font-family:
+"Georgia","serif";color:blue;mso-ansi-language:UK'>]</span><span lang=UK
+style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>SetAxisLimits</span></b></span><b><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'> </span></b><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:blue'>[X Y Y2] </span><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:green'>&lt;Segment
+#&gt;</span><span style='font-size:9.5pt;font-family:"Georgia","serif";
+color:blue'> [Bottom, Top, Interval #]</span><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>SetAxisTitle</span></b></span><b><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'> </span></b><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:green'>&lt;X Y
+Y2&gt;</span><span style='font-size:9.5pt;font-family:"Georgia","serif";
+color:blue'> [Title]</span><span lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>S</span></b><b><span style='font-size:9.5pt;font-family:
+"Georgia","serif"'>et</span></b><b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'>G</span></b><span
+class=SpellE><b><span style='font-size:9.5pt;font-family:"Georgia","serif"'>raph</span></b></span><b><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:
+UK'>T</span></b><span class=SpellE><b><span style='font-size:9.5pt;font-family:
+"Georgia","serif"'>itle</span></b></span><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'> </span></b><span style='font-size:9.5pt;
+font-family:"Georgia","serif";color:blue'>[Title]</span><span lang=UK
+style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>DuplicateFamily</span></b><span lang=UK style='font-size:
+9.5pt;font-family:"Georgia","serif";mso-ansi-language:UK'> <span
+style='color:green'>&lt;prepend_text&gt; &lt;clear&gt;</span></span><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:green'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Print</span></b><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>Layouts<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>CreateLayout</span></b></span><b><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'> </span></b><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";color:blue;
+mso-ansi-language:UK'>[</span><span style='font-size:9.5pt;font-family:"Georgia","serif";
+color:blue'>#</span><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+color:blue;mso-ansi-language:UK'>rows]</span><span lang=UK style='font-size:
+9.5pt;font-family:"Georgia","serif";mso-ansi-language:UK'> <span
+style='color:blue'>[</span></span><span style='font-size:9.5pt;font-family:
+"Georgia","serif";color:blue'>#</span><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";color:blue;mso-ansi-language:UK'>columns]</span><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";color:blue'> </span><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:green'>&lt;#orientation&gt;
+&lt;#<span class=SpellE>StartingGraphIndex</span> &lt;<span class=SpellE>GraphsCount</span>#&gt;&gt;</span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-family:"Arial","sans-serif";
+mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>Exporting
+(or copying) graphs and layouts<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>ExportBMP</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[filename]</span>
+<span style='color:green'>&lt;resolution&gt; </span></span><span lang=UK
+style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Export</span></b><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>E</span></b><b><span lang=UK style='font-size:
+9.5pt;font-family:"Georgia","serif";mso-ansi-language:UK'>MF</span></b><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:
+UK'> <span style='color:blue'>[filename]</span> <span style='color:green'>&lt;background&gt;
+&lt;clear&gt;</span></span><span lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>ExportJPG</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[filename]</span>
+<span style='color:green'>&lt;resolution&gt; </span></span><span lang=UK
+style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>ExportPCX</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[filename]</span></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>ExportPNG</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[filename]</span></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>ExportTIF</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[filename]</span>
+<span style='color:green'>&lt;resolution&gt; &lt;mode&gt; &lt;compress&gt;</span></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>ExportWMF</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[filename]</span>
+<span style='color:green'>&lt;background&gt; &lt;clear&gt;</span></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>ExportPDF</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[filename]</span>
+<span style='color:green'>&lt;mode&gt; &lt;clear&gt;</span></span><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:green'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Export</span></b><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>All</span></b><b><span lang=UK style='font-size:
+9.5pt;font-family:"Georgia","serif";mso-ansi-language:UK'>PDF</span></b><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:
+UK'> <span style='color:blue'>[filename]</span> <span style='color:green'>&lt;mode&gt;
+&lt;clear&gt;</span></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>ExportEPS</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[filename]</span>
+<span style='color:green'>&lt;mode&gt; &lt;nofonts&gt; </span></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Copy</span></b><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>SendToWord</span></b><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>SendToPP</span></b><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-size:9.5pt;font-family:"Georgia","serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>Outputting
+results into a table <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:9.5pt;font-family:"Georgia","serif"'>Table
+Prism </span></b><span style='font-size:9.5pt;font-family:"Georgia","serif";
+color:blue'>[#]</span><span style='font-size:9.5pt;font-family:"Georgia","serif"'>
+<span style='color:green'>&lt;clear&gt;</span></span><span lang=UK
+style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-size:9.5pt;font-family:"Georgia","serif"'>Table
+Text </span></b><span style='font-size:9.5pt;font-family:"Georgia","serif";
+color:green'>&lt;&amp;&gt; &lt;’<span class=SpellE>delim</span>’&gt;</span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-size:9.5pt;font-family:"Georgia","serif"'>Table
+CSV </span></b><span style='font-size:9.5pt;font-family:"Georgia","serif";
+color:green'>&lt;’delimiter’&gt;</span><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-size:9.5pt;font-family:"Georgia","serif"'>Table
+HTML </span></b><span style='font-size:9.5pt;font-family:"Georgia","serif";
+color:green'>&lt;border #&gt; &lt;width #&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-size:9.5pt;font-family:"Georgia","serif"'>Table
+SQL</span></b><span style='font-family:"Georgia","serif"'> </span><span
+style='font-size:9.5pt;mso-bidi-font-size:12.0pt;font-family:"Georgia","serif";
+color:blue'>[<span class=SpellE>datasource</span>]</span><span
+style='font-size:9.5pt;mso-bidi-font-size:12.0pt;font-family:"Georgia","serif";
+color:green'> </span><span style='font-size:9.5pt;mso-bidi-font-size:12.0pt;
+font-family:"Georgia","serif";color:blue'>[<span class=SpellE>Tablename</span>]
+[Login] [Password]</span><span style='font-size:9.5pt;mso-bidi-font-size:12.0pt;
+font-family:"Georgia","serif";color:green'> &lt;clear&gt;</span><span lang=UK
+style='font-family:"Georgia","serif";color:#99CC00;mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-size:9.5pt;font-family:"Georgia","serif"'>Table
+XML </span></b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+color:blue;mso-ansi-language:UK'>[filename]</span><span style='font-size:9.5pt;
+font-family:"Georgia","serif";color:blue'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>WTable</span></b></span><b><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'> </span></b><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:blue'>[Column title]</span><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'> <span style='color:blue'>[row]
+[<span class=SpellE>col</span>]</span> <span style='color:green'>&lt;<span
+class=SpellE>subcol</span>&gt;<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='font-size:9.5pt;font-family:"Georgia","serif";
+color:green'><span style='mso-spacerun:yes'>  </span></span><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'>The first argument will
+become the column title in the new table. The next three arguments define the cell
+on the current results table that will be written to the new table.</span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>EndTable</span></b></span><span lang=UK
+style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Next</span></b><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>Row</span></b><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.5pt;font-family:"Georgia","serif";
+color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>Files<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>SetPath</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[pathname]</span></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>SetProjectName</span></b></span><b><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'> </span></b><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";color:blue;
+mso-ansi-language:UK'>[</span><span style='font-size:9.5pt;font-family:"Georgia","serif";
+color:blue'>project</span><span lang=UK style='font-size:9.5pt;font-family:
+"Georgia","serif";color:blue;mso-ansi-language:UK'>name]</span><span lang=UK
+style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Save</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:green'>&lt;filename&gt;</span></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Close</span></b><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Open</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[</span></span><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:blue'>Prism </span><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";color:blue;
+mso-ansi-language:UK'>filename]</span><span style='font-size:9.5pt;font-family:
+"Georgia","serif";color:blue'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>OpenOutput</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[filename]</span>,
+<span style='color:green'>&lt;</span></span><span style='font-size:9.5pt;
+font-family:"Georgia","serif";color:green'>clear</span><span lang=UK
+style='font-size:9.5pt;font-family:"Georgia","serif";color:green;mso-ansi-language:
+UK'>&gt;</span><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>,<span style='color:green'>&lt;”delimiter”&gt;</span></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Import</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";color:green;mso-ansi-language:UK'>
+&lt;filename&gt; </span><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>,<span style='color:green'>&lt;row&gt;</span>,<span
+style='color:green'> &lt;col&gt;</span></span><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>Writing to
+a text file<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>OpenOutput</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[filename]</span>,
+<span style='color:green'>&lt;</span></span><span style='font-size:9.5pt;
+font-family:"Georgia","serif";color:green'>clear</span><span lang=UK
+style='font-size:9.5pt;font-family:"Georgia","serif";color:green;mso-ansi-language:
+UK'>&gt;</span><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>,<span style='color:green'>&lt;”delimiter”&gt;</span></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>CloseOutput</span></b><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>WTitle</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'>, <span style='color:green'>&lt;;&amp;&gt;</span></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>WVersion</span></b></span><b><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'> </span></b><span
+class=GramE><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+color:green;mso-ansi-language:UK'>&lt;;</span></span><span lang=UK
+style='font-size:9.5pt;font-family:"Georgia","serif";color:green;mso-ansi-language:
+UK'>&amp;&gt;</span><span lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>WText</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[text]</span>
+, <span style='color:green'>&lt;;&amp;&gt;</span></span><span lang=UK
+style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.5pt;font-family:"Georgia","serif"'>&nbsp;</span><b><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:
+UK'>WDate</span></b><span lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>WCell</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[row]</span>,
+<span style='color:blue'>[col]</span>, <span style='color:green'>&lt;subcol&gt;</span></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>WCol</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[row]</span>,
+<span style='color:blue'>[column]</span></span><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>WRow</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";color:blue;mso-ansi-language:UK'> [row]</span><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:
+UK'> , <span style='color:green'>&lt;col&gt;</span> , <span style='color:green'>&lt;subcol&gt;</span>
+, <span style='color:green'>&lt;;&amp;&gt;</span></span><span lang=UK
+style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>WSheet</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[row]</span>
+, <span style='color:green'>&lt;col&gt;</span> , <span style='color:green'>&lt;subcol&gt;</span>,
+<span style='color:green'>&lt;;&amp;&gt;</span></span><span lang=UK
+style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>WTCol</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[row,
+col]</span> , <span style='color:green'>&lt;;&amp;&gt;</span></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>WTRow</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[row]
+</span>, <span style='color:green'>&lt;col&gt;</span> , <span style='color:
+green'>&lt;subcol&gt;</span>, <span style='color:green'>&lt;;&amp;&gt;</span></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>WTSheet</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[row]</span>
+, <span style='color:green'>&lt;col&gt;</span> , <span style='color:green'>&lt;subcol&gt;</span>,
+<span style='color:green'>&lt;;&amp;&gt;</span></span><span style='font-size:
+9.5pt;font-family:"Georgia","serif";color:green'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:#222222'>WBlock</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:9.5pt;font-family:
+"Georgia","serif";color:#222222'> </span></b><span style='font-size:9.5pt;
+font-family:"Georgia","serif";color:blue'>[row(s)]</span><span class=GramE><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'>,<span style='color:blue'>
+&nbsp;[</span></span></span><span style='font-size:9.5pt;font-family:"Georgia","serif";
+color:blue'>column(s)]</span><span style='font-size:9.5pt;font-family:"Georgia","serif"'>,<span
+style='color:#222222'> </span><span style='color:green'>&lt;row label&gt;</span>,<span
+style='color:green'> &lt;;&gt;</span></span><span style='font-family:"Georgia","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:#222222'>WTBlock</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:9.5pt;font-family:
+"Georgia","serif";color:#222222'> </span></b><span style='font-size:9.5pt;
+font-family:"Georgia","serif";color:blue'>[row(s)]</span><span class=GramE><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'>,<span style='color:blue'>
+&nbsp;[</span></span></span><span style='font-size:9.5pt;font-family:"Georgia","serif";
+color:blue'>column(s)]</span><span style='font-size:9.5pt;font-family:"Georgia","serif"'>,<span
+style='color:#222222'> </span><span style='color:green'>&lt;row label&gt;</span>,<span
+style='color:green'> &lt;;&gt;<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=UK
+style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial","sans-serif"'>General<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>GoTo</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:green'>&lt;section&gt;</span>,<span
+style='color:green'> &lt;sheet&gt;</span>,<span style='color:green'>
+&lt;view&gt;</span></span><span lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>GoTo</span></b></span><b><span style='font-size:
+9.5pt;font-family:"Georgia","serif"'> +<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Print</span></b><span lang=UK style='mso-ansi-language:
+UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>Set</span></b><b><span style='font-size:9.5pt;font-family:
+"Georgia","serif"'>Sheet</span></b><b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'>Title</span></b><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";mso-ansi-language:
+UK'> <span style='color:blue'>[new_name]</span> <span style='color:green'>&lt;K&gt;</span></span><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:green'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>CloseScriptDialog</span></b></span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>RecalcAll</span></b></span><span lang=UK
+style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";
+mso-ansi-language:UK'>SetInfo</span></b><span lang=UK style='font-size:9.5pt;
+font-family:"Georgia","serif";mso-ansi-language:UK'> <span style='color:blue'>[</span></span><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:blue'>value or text</span><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";color:blue;
+mso-ansi-language:UK'>]</span><span lang=UK style='font-size:9.5pt;font-family:
+"Georgia","serif";mso-ansi-language:UK'> <span style='color:green'>&lt;rownumber&gt;
+&lt;position&gt;</span></span><span lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-size:9.5pt;
+font-family:"Georgia","serif"'>SetScriptDialogTitle</span></b></span><b><span
+style='font-size:9.5pt;font-family:"Georgia","serif"'> </span></b><span
+lang=UK style='font-size:9.5pt;font-family:"Georgia","serif";color:blue;
+mso-ansi-language:UK'>[</span><span style='font-size:9.5pt;font-family:"Georgia","serif";
+color:blue'>dialog title</span><span lang=UK style='font-size:9.5pt;font-family:
+"Georgia","serif";color:blue;mso-ansi-language:UK'>]</span><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:blue'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><b style='mso-bidi-font-weight:normal'><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:black'>CreateLog</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:9.5pt;font-family:
+"Georgia","serif";color:black'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:black'>Exit </span></b><span
+style='font-size:9.5pt;font-family:"Georgia","serif";color:black'>(Windows
+only)<o:p></o:p></span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
